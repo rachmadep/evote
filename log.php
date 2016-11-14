@@ -180,7 +180,7 @@ include('idle.php');
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
       <footer class="main-footer">
-        <strong>Copyright &copy; 2014-2015 <a href="http://id.linkedin.com/in/felixprawira">Felix Prawira</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2016 <a href="#">KPU FT UGM</a>.</strong> All rights reserved.
       </footer>
 
     </div><!-- ./wrapper -->
