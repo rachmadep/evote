@@ -12,10 +12,10 @@ header("location: admin.php");
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Evote Login Form</title>
+        <title>Evote Admin Login</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/css/fonts.googleapis.css?family=Roboto:400,100,300,500">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/form-elements.css">
@@ -41,11 +41,12 @@ header("location: admin.php");
 
         <!-- Top content -->
         <div class="top-content">
+            
             <div class="inner-bg">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1><strong>Evote</strong> Login Form</h1>
+                            <h1 class="header-text">Pemilihan Ketua BEM KMFT UGM</h1>
                             
                         </div>
                     </div>
@@ -53,11 +54,11 @@ header("location: admin.php");
                         <div class="col-sm-6 col-sm-offset-3 form-box">
                         	<div class="form-top">
                         		<div class="form-top-left">
-                        			<h3>Login to our site</h3>
+                        			<h3>Admin Login</h3>
                             		<p>Enter your username and password to log on:</p>
                         		</div>
                         		<div class="form-top-right">
-                        			<i class="fa fa-lock"></i>
+                        			<!-- <i class="fa fa-lock"></i> -->
                         		</div>
                             </div>
                             <div class="form-bottom">
@@ -90,7 +91,7 @@ header("location: admin.php");
                 </div>
             </div>
             
-        </div>
+        </div><div><img class="logo-kpu" src="image/LOGO fix 2.png"></div>
 
 
         <!-- Javascript -->

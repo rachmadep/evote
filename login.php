@@ -66,10 +66,10 @@ header("location: index.php");
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Evote Login Form</title>
+        <title>Evote User Login</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/css/fonts.googleapis.css?family=Roboto:400,100,300,500">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/form-elements.css">
@@ -95,11 +95,12 @@ header("location: index.php");
 
         <!-- Top content -->
         <div class="top-content">
+            
             <div class="inner-bg">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1><strong>Evote</strong> Login Form</h1>
+                            <h1 class="header-text">Pemilihan Ketua BEM KMFT UGM</h1>
                             
                         </div>
                     </div>
@@ -107,24 +108,24 @@ header("location: index.php");
                         <div class="col-sm-6 col-sm-offset-3 form-box">
                         	<div class="form-top">
                         		<div class="form-top-left">
-                        			<h3>Login to our site</h3>
-                            		<p>Enter your username and password to log on:</p>
+                        			<h3><strong class="evote">Evote</strong> Login</h3>
+                            		<p>Masukkan NIM dan password</p>
                         		</div>
                         		<div class="form-top-right">
-                        			<i class="fa fa-lock"></i>
+                        			<!-- <i class="fa fa-lock"></i> -->
                         		</div>
                             </div>
                             <div class="form-bottom">
 			                    <form role="form" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" class="login-form">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="form-username">NIM</label>
-			                        	<input type="text" name="username" placeholder="Username..." class="form-username form-control" id="form-username">
+			                        	<input type="text" name="username" placeholder="NIM" class="form-username form-control" id="form-username">
 			                        </div>
 			                        <div class="form-group">
 			                        	<label class="sr-only" for="form-password">Password</label>
-			                        	<input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password">
+			                        	<input type="password" name="password" placeholder="Password" class="form-password form-control" id="form-password">
 			                        </div>
-			                        <input type="submit" name="submit" class="btn" value="Sign in!">
+			                        <input type="submit" name="submit" class="btn" value="Masuk">
 			                    </form>
 		                    </div>
                         </div>
@@ -133,6 +134,7 @@ header("location: index.php");
             </div>
             
         </div>
+        <div><img class="logo-kpu" src="image/LOGO fix 2.png"></div>
 
 
         <!-- Javascript -->
@@ -140,7 +142,12 @@ header("location: index.php");
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.backstretch.min.js"></script>
         <script src="assets/js/scripts.js"></script>
-        
+        <script language="JavaScript">
+        /* Disable mouse right-click on page*/
+        document.addEventListener("contextmenu", function(e){
+            e.preventDefault();
+        }, false);
+        </script>
         <!--[if lt IE 10]>
             <script src="assets/js/placeholder.js"></script>
         <![endif]-->
