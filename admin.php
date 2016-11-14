@@ -13,9 +13,9 @@ include('idle.php');
     <!-- Bootstrap 3.3.5 -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
     <!-- jvectormap -->
     <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
     <!-- Theme style -->
@@ -42,7 +42,7 @@ include('idle.php');
           <!-- Sidebar user panel -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+              <img src="dist/img/admin1.jpg" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
               <p><?php if ($_SESSION['level_user'] == 'admin') {
@@ -162,12 +162,14 @@ include('idle.php');
                         $check = mysqli_query($conn, "SELECT COUNT(*) AS total FROM users_password where user_id = '$id_user'");
                         $total = mysqli_fetch_assoc($check);
                         if ($total['total'] == 0) {
-                          $rand = substr(md5(microtime()),rand(0,26),3);
+                          $rand = substr(md5(microtime()),rand(0,26),5);
                           echo '<b>NIM :</b> '.$_POST['nim'].'<br>';
                           echo '<b>Password :</b> '.$rand;
                           $update = mysqli_query($conn, "INSERT INTO users_password(user_id, password_user) VALUES ('$id_user', PASSWORD('$rand'))");
                         }
                         else{
+                          echo '<b>NIM :</b> '.$_POST['nim'].'<br>';
+                          // echo '<b>Password :</b> '.$pas=mysqli_query($conn, "SELECT password_user FROM users_password WHERE user_id = '$id_user'");
                           echo "password already created";
                         }
                       }
@@ -183,7 +185,7 @@ include('idle.php');
       </div><!-- /.content-wrapper -->
 
       <footer class="main-footer">
-        <strong>Copyright &copy; 2014-2015 <a href="http://id.linkedin.com/in/felixprawira">Felix Prawira</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2016 <a href="#">KPU FT UGM</a>.</strong> All rights reserved.
       </footer>
 
     </div><!-- ./wrapper -->

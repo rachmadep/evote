@@ -146,12 +146,12 @@ include('idle.php');
                           <input type="password" class="form-control" name="password2" id="password" placeholder="Password">
                         </div>
                       </div>
-                      <div class="form-group">
+                      <!-- <div class="form-group">
                         <label class="col-sm-2 control-label">Password Calon 3</label>
                         <div class="col-sm-10">
                           <input type="password" class="form-control" name="password3" id="password" placeholder="Password">
                         </div>
-                      </div>
+                      </div> -->
                     </div><!-- /.box-body -->
                     <div class="box-footer">
                       <button type="reset" class="btn btn-default">Reset</button>
@@ -165,7 +165,7 @@ include('idle.php');
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
       <footer class="main-footer">
-        <strong>Copyright &copy; 2014-2015 <a href="http://id.linkedin.com/in/felixprawira">Felix Prawira</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2016 <a href="#">KPU FT UGM</a>.</strong> All rights reserved.
       </footer>
 
     </div><!-- ./wrapper -->

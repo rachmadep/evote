@@ -153,7 +153,7 @@ include('idle.php');
                     <div class="col-md-4" style="padding-top: 100px;">
                     	<div style="background-color:#00c0ef; width: 20px; height: 20px; float: left;"></div> <span> &nbsp;&nbsp;Calon Nomor 1 </span><br><br>
                     	<div style="background-color:#3c8dbc; width: 20px; height: 20px; float: left;"></div> <span> &nbsp;&nbsp;Calon Nomor 2 </span><br><br>
-                    	<div style="background-color:#d2d6de; width: 20px; height: 20px; float: left;"></div> <span> &nbsp;&nbsp;Calon Nomor 3 </span><br><br>
+                    	<!-- <div style="background-color:#d2d6de; width: 20px; height: 20px; float: left;"></div> <span> &nbsp;&nbsp;Calon Nomor 3 </span><br><br> -->
                     </div>
                 </div><!-- /.box-body -->
               </div><!-- /.box -->
@@ -198,7 +198,7 @@ include('idle.php');
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
       <footer class="main-footer">
-        <strong>Copyright &copy; 2014-2015 <a href="http://id.linkedin.com/in/felixprawira">Felix Prawira</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2016 <a href="#">KPU FT UGM</a>.</strong> All rights reserved.
       </footer>
 
     </div><!-- ./wrapper -->
@@ -212,9 +212,9 @@ include('idle.php');
       $two = mysqli_fetch_assoc($two);
       $two = $two['total_2'];
 
-      $three = mysqli_query($conn, "SELECT COUNT(*) AS total_3 FROM result WHERE choice = '3'");
-      $three = mysqli_fetch_assoc($three);
-      $three = $three['total_3'];
+      // $three = mysqli_query($conn, "SELECT COUNT(*) AS total_3 FROM result WHERE choice = '3'");
+      // $three = mysqli_fetch_assoc($three);
+      // $three = $three['total_3'];
     ?>
     <input type="text" value="<?php echo $one;?>" name="one" id="one" hidden>
     <input type="text" value="<?php echo $two;?>" name="two" id="two" hidden>
