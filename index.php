@@ -10,31 +10,43 @@ include('session.php');
 	<meta http-equiv="refresh" content="180;url=logout.php">
     <!-- Bootstrap 3.3.5 -->
     <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- <script src="assets/js/jquery1.12.0.min.js"></script> -->
+  	<script src="assets/js/bootstrap.min.js"></script>
 	<title>
 		E-vote System
 	</title>
 </head>
-<body style="background: #efefef;">
-	<header style="background: #fff; padding: 5%; margin-bottom: 100px;">
-		<h1 style="color: #3c8dbc;"><b>Pemilihan Ketua KMTF Periode 2016/2017</b></h1>
-		<span>untuk memilih, silahkan meng-klik gambar calon di bawah ini</span>
+<body class="body-index">
+	<header class="header-index">
+
+		<h1 style="color: #ffffff;"><b>Pemilihan Ketua BEM KMFT UGM 2017</b></h1>
+		<span class="text-header">
+    Silahkan memilih salah satu calon dengan cara <strong>klik pada gambar</strong> calon
+    </span>
 	</header>
-	<div class="col-md-4">
-		<button data-toggle="modal" data-target="#modal1"><img src="Untitled.png" width="100%"></button>
-		<h1 align="center">1</h1>
-	</div>
-	<div class="col-md-4">
-		<button data-toggle="modal" data-target="#modal2"><img src="Untitled.png" width="100%"></button>
-		<h1 align="center">2</h1>
-	</div>
-	<div class="col-md-4">
-		<button data-toggle="modal" data-target="#modal3"><img src="Untitled.png" width="100%"></button>
-		<h1 align="center">3</h1>
-	</div>
+  <div class="gambar-calon">
+  	<div class="col-md-6">
+  		<button data-toggle="modal" data-target="#modal1"><img id="foto-calon" src="image/calon1.jpg" width="100%"></button>
+  		<h1 class="nama align="center">1</h1>
+      <h2 class="nama">M. Iqbal Habibi Kamal</h2>
+  	</div>
+  	<div class="col-md-6">
+  		<button data-toggle="modal" data-target="#modal2"><img id="foto-calon" src="image/calon2.jpg" width="100%"></button>
+  		<h1 class="nama align="center">2</h1>
+      <h2 class="nama">Rifqi Arrahmansyah</h2>
+  	</div>
+  	<!-- <div class="col-md-4">
+  		<button data-toggle="modal" data-target="#modal3"><img id="foto-calon" src="image/calon3.jpg" width="100%"></button>
+  		<h1 align="center">3</h1>
+      <h2 class="nama">Nama Calon</h2>
+  	</div> -->
+  </div>
+
+  <div><img class="logo-kpu-index" src="image/LOGO fix.png"></div>
   
   <div class="modal fade" id="modal1" role="dialog">
     <div class="modal-dialog">
@@ -74,10 +86,10 @@ include('session.php');
     </div>
   </div>
 
-  <div class="modal fade" id="modal3" role="dialog">
-    <div class="modal-dialog">
+  <!-- <div class="modal fade" id="modal3" role="dialog"> -->
+    <!-- <div class="modal-dialog"> -->
       <!-- Modal content-->
-      <div class="modal-content">
+      <!-- <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Konfirmasi pilihan</h4>
@@ -91,8 +103,13 @@ include('session.php');
         </div>
       </div>
     </div>
-  </div>
-
+  </div> -->
+        <script language="JavaScript">
+        /* Disable mouse right-click on page*/
+        document.addEventListener("contextmenu", function(e){
+            e.preventDefault();
+        }, false);
+        </script>
 	
 </body>
 </html>
