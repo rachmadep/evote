@@ -1,3 +1,90 @@
+.evote{
+	font-size: 24px;
+}
+h1.header-text{
+	font-weight: 600;
+    font-size: 50px;
+    -webkit-text-fill-color: rgb(199, 199, 199);
+    -webkit-text-stroke: 1px #3f4d5e;
+}
+.logo-kpu {
+    position: absolute;
+    display: block;
+    max-height: 200px;
+    float: left;
+    /*margin-top: 10px;*/
+    margin-left: 10px;
+    z-index: 0;
+}
+.logo-kpu-index {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    max-height: 180px;
+    /* float: left; */
+    margin-top: 414px;
+    margin-left: 527px;
+    z-index: 0;
+}
+/* Custom CSS index.php */
+.header-index{
+	background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.35));
+    padding: 15px;
+    padding-bottom: 35px;
+    text-align: center;
+    -webkit-text-stroke: 0.3px #3f4d5e;
+}
+
+.body-index {
+    background: 
+    	linear-gradient(rgba(0, 0, 0, 0), rgba(58, 58, 58, 0.51)),
+    	url("../../image/background.jpg");
+    background-color: #a2a5a8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.gambar-calon{
+    padding-top: 20px;
+}
+
+#foto-calon{
+	height: 450px;
+    width: 360px;
+	overflow-y: hidden;
+}
+
+.text-header{
+	font-size: 20px;
+    font-weight: 600;
+    color: #d2d2d2;
+}
+
+.nama{
+	text-align: center;
+    margin-top: 0;
+    color: white;
+}
+
+
+/**/
+.modal-content {
+    margin-top: 100px;
+}
+.modal-title {
+    font-size: 24px;
+}
+.modal-body {
+    font-size: 26px;
+}
+.btn {
+    font-size: 20px;
+}
+.btn-success {
+    float: left;
+}
+/**/
+/* END Custom CSS index.php */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -8,7 +95,12 @@ body {
     text-align: center;
 }
 
-strong { font-weight: 500; }
+strong { 
+	font-weight: 600 !important ;
+    color: #ffffff;
+    font-stretch: extra-expanded;
+    font-size: 18px;
+}
 
 a, a:hover, a:focus {
 	color: #de615e;
