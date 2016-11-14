@@ -8,8 +8,8 @@
 <?php
 //MySQL connection parameters
 $dbhost = 'localhost';
-$dbuser = 'felix';
-$dbpsw = '09081993';
+$dbuser = 'root';
+$dbpsw = '';
 $dbname = 'evote';
 
 //Connects to mysql server
