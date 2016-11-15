@@ -134,7 +134,7 @@ header("location: index.php");
             </div>
             
         </div>
-        <div><img class="logo-kpu" src="image/LOGO fix 2.png"></div>
+        <div><img class="logo-kpu" src="image/LOGO fix.png"></div>
 
 
         <!-- Javascript -->
