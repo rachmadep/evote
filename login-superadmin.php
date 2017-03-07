@@ -45,7 +45,7 @@ header("location: admin.php");
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1 class="header-text">Pemilihan Ketua BEM KMFT UGM</h1>
+                            <h1 class="header-text">Pemilihan Ketua KMTNTF UGM 2017</h1>
                             
                         </div>
                     </div>

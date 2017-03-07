@@ -23,7 +23,7 @@ include('session.php');
 <body class="body-index">
 	<header class="header-index">
 
-		<h1 style="color: #ffffff;"><b>Pemilihan Ketua BEM KMFT UGM 2017</b></h1>
+		<h1 style="color: #ffffff;"><b>Pemilihan Ketua KMTNTF 2017</b></h1>
 		<span class="text-header">
     Silahkan memilih salah satu calon dengan cara <strong>klik pada gambar</strong> calon
     </span>
