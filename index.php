@@ -31,13 +31,13 @@ include('session.php');
   <div class="gambar-calon">
   	<div class="col-md-6">
   		<button data-toggle="modal" data-target="#modal1"><img id="foto-calon" src="image/calon1.jpg" width="100%"></button>
-  		<h1 class="nama align="center">1</h1>
-      <h2 class="nama">M. Iqbal Habibi Kamal</h2>
+  		<h1 class="nama align="center" ">1</h1>
+      <h2 class="nama">Irfan Nurfatthan</h2>
   	</div>
   	<div class="col-md-6">
   		<button data-toggle="modal" data-target="#modal2"><img id="foto-calon" src="image/calon2.jpg" width="100%"></button>
-  		<h1 class="nama align="center">2</h1>
-      <h2 class="nama">Rifqi Arrahmansyah</h2>
+  		<h1 class="nama align="center" ">2</h1>
+      <h2 class="nama">Gama Atmajaya</h2>
   	</div>
   	<!-- <div class="col-md-4">
   		<button data-toggle="modal" data-target="#modal3"><img id="foto-calon" src="image/calon3.jpg" width="100%"></button>
@@ -47,7 +47,7 @@ include('session.php');
   </div>
 
   <div><img class="logo-kpu-index" src="image/LOGO fix.png"></div>
-  
+
   <div class="modal fade" id="modal1" role="dialog">
     <div class="modal-dialog">
       <!-- Modal content-->
@@ -110,6 +110,6 @@ include('session.php');
             e.preventDefault();
         }, false);
         </script>
-	
+
 </body>
 </html>
