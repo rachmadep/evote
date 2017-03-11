@@ -41,13 +41,13 @@ header("location: admin.php");
 
         <!-- Top content -->
         <div class="top-content">
-            
+
             <div class="inner-bg">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1 class="header-text">Pemilihan Ketua KMTNTF UGM 2017</h1>
-                            
+                            <h1 class="header-text">Pemilihan Ketua KMTNTF FT UGM 2017</h1>
+
                         </div>
                     </div>
                     <div class="row">
@@ -73,7 +73,7 @@ header("location: admin.php");
 			                        	<input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password">
 			                        </div>
 		                        </div>
-		                        <div class="col-md-6">	
+		                        <div class="col-md-6">
 			                        <div class="form-group">
 			                    		<label class="sr-only" for="form-username">Username</label>
 			                        	<input type="text" name="username2" placeholder="Username..." class="form-username form-control" id="form-username">
@@ -90,7 +90,7 @@ header("location: admin.php");
                     </div>
                 </div>
             </div>
-            
+
         </div><div><img class="logo-kpu" src="image/LOGO fix 2.png"></div>
 
 
@@ -99,7 +99,7 @@ header("location: admin.php");
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.backstretch.min.js"></script>
         <script src="assets/js/scripts.js"></script>
-        
+
         <!--[if lt IE 10]>
             <script src="assets/js/placeholder.js"></script>
         <![endif]-->

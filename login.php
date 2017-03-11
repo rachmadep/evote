@@ -6,7 +6,7 @@ $conn = new mysqli($servername, $username, $password, $database);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-} 
+}
 $error=''; // Variable To Store Error Message
 if (isset($_POST['submit'])) {
 if (empty($_POST['username']) || empty($_POST['password'])) {
@@ -95,13 +95,13 @@ header("location: index.php");
 
         <!-- Top content -->
         <div class="top-content">
-            
+
             <div class="inner-bg">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1 class="header-text">Pemilihan Ketua KMTNTF UGM 2017</h1>
-                            
+                            <h1 class="header-text">Pemilihan Ketua KMTNTF FT UGM 2017</h1>
+
                         </div>
                     </div>
                     <div class="row">
@@ -132,7 +132,7 @@ header("location: index.php");
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <div><img class="logo-kpu" src="image/LOGO fix.png"></div>
 
