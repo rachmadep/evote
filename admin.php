@@ -130,15 +130,15 @@ include('idle.php');
                         <div class="form-group col-md-offset-3 col-md-5">
                           <label class="col-sm-2 control-label">NIM</label>
                           <div class="col-sm-8">
-                            <input type="text" name="nim" class="form-control" id="nim" placeholder="Enter NIM">  
+                            <input type="text" name="nim" class="form-control" id="nim" placeholder="Enter NIM">
                           </div>
                           <div class="col-sm-2">
                             <input type="submit" class="btn btn-submit btn-flat btn-danger" name="submit" value="Submit">
                           </div>
-                        </div>  
+                        </div>
                       </form>
                     </div><!-- /.col -->
-                    
+
                   </div><!-- /.row -->
                 </div><!-- ./box-body -->
                 <div class="box-footer">
@@ -151,7 +151,7 @@ include('idle.php');
                       // Check connection
                       if ($conn->connect_error) {
                           die("Connection failed: " . $conn->connect_error);
-                      } 
+                      }
                       if (isset($_POST['submit'])) {
                         $query=mysqli_query($conn, "SELECT id_user
                         FROM users
@@ -159,21 +159,32 @@ include('idle.php');
                         ");
                         $ID = mysqli_fetch_assoc($query);
                         $id_user = $ID['id_user'];
-                        $check = mysqli_query($conn, "SELECT COUNT(*) AS total FROM users_password where user_id = '$id_user'");
+                        $check = mysqli_query($conn, "SELECT COUNT(*) AS total FROM result where userID = '$id_user'");
                         $total = mysqli_fetch_assoc($check);
-                        if ($total['total'] == 0) {
-                          $rand = substr(md5(microtime()),rand(0,26),5);
-                          echo '<b>NIM :</b> '.$_POST['nim'].'<br>';
-                          echo '<b>Password :</b> '.$rand;
-                          $update = mysqli_query($conn, "INSERT INTO users_password(user_id, password_user) VALUES ('$id_user', PASSWORD('$rand'))");
+
+                        $checks = mysqli_query($conn, "SELECT COUNT(*) AS totals FROM users_password where user_id = '$id_user'");
+                        $totals = mysqli_fetch_assoc($checks);
+                        if ($ID['id_user'] > 0){
+                          if ($total['total'] == 0) {
+                            $rand = substr(md5(microtime()),rand(0,26),5);
+                            echo '<b>NIM :</b> '.$_POST['nim'].'<br>';
+                            echo '<b>Password :</b> '.$rand.'<br>';
+                            echo '<b>Total Generate :</b> '.$totals['totals'];
+
+                            $update = mysqli_query($conn, "INSERT INTO users_password(user_id, password_user) VALUES ('$id_user', PASSWORD('$rand'))");
+                          }
+                          else if ($total['total'] !== 0) {
+                            echo '<b>NIM :</b> '.$_POST['nim'].'<br>';
+                            echo "Telah menggunakan hak pilih";
+                          }
                         }
                         else{
                           echo '<b>NIM :</b> '.$_POST['nim'].'<br>';
-                          // echo '<b>Password :</b> '.$pas=mysqli_query($conn, "SELECT password_user FROM users_password WHERE user_id = '$id_user'");
-                          echo "password already created";
+                          echo "NIM tidak ada dalam database <br>";
                         }
                       }
-                      
+
+
                     ?>
                     </div>
                   </div><!-- /.row -->
